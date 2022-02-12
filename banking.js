@@ -77,4 +77,13 @@ document.getElementById('popup-error-no-balance').addEventListener('click', func
     document.getElementById('popup-error-no-balance').style.display = 'none';
     withdrawInputField.value = "";
 })
+// Reset All Button===============================================
+//===============================================
+
+document.getElementById('reset-all').addEventListener('click', function () {
+    localStorage.setItem('overviewDepositLocal', 0);
+    localStorage.setItem('overviewWithdrawLocal', 0);
+    localStorage.setItem('overviewBalanceLocal', 0);
+    location.reload();
+})
 
