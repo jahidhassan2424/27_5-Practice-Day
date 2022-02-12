@@ -105,6 +105,29 @@
 
     </header>
     <main class="container mx-auto">
+
+        <!-- Transaction button  -->
+        <section>
+            <div class="text-right flex justify-end">
+                <!-- Transaction Cross -->
+                <button id="transaction-close-btn"
+                    class="hidden mr-2 bg-red-600 text-xl text-white font-bold text-center px-5 py-3 rounded-full">X</button>
+                <!-- Trasnsaction Button -->
+                <button id="transaction-btn"
+                    class="bg-blue-600 text-xl text-white font-bold text-center px-5 py-3 rounded-xl">Transactions</button>
+            </div>
+
+            <!-- Transaction Table -->
+            <div id="transaction-table" class="hidden flex justify-center">
+                <table id="transaction-table-original" class="  border-2 border-black w-3/4 text-center text-2xl mt-5">
+                    <thead class="bg-zinc-300">
+                        <th>Customer Name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                    </thead>
+                </table>
+            </div>
+        </section>
         <!-- Account Overview section -->
         <section class="bg-zinc-300 rounded-2xl">
             <div class="m-5 p-10">
@@ -225,7 +248,11 @@
             <button id="reset-all" class="bg-red-500 px-5 py-3 rounded-lg text-white font-bold">Reset All</button>
         </div>
     </main>
-
+    <span>&nbsp;</span>
+    <span>&nbsp;</span>
+    <span>&nbsp;</span>
+    <span>&nbsp;</span>
+    <span>&nbsp;</span>
     <script src="banking.js"></script>
 </body>
 
