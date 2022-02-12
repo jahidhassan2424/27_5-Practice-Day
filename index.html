@@ -161,8 +161,8 @@
                     <div class="mt-4">
                         <label class="block mb-2 text-sm font-medium text-zinc-900 dark:text-zinc-900"
                             for="LoggingEmailAddress">Email Address</label>
-                        <input id="LoggingEmailAddress"
-                            class="block w-full px-4 py-2 text-blackbg-white border rounded-md dark:bg-white dark:text-black dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300"
+                        <input id="LoggingEmailAddress" tabindex="1"
+                            class=" block w-full px-4 py-2 text-blackbg-white border rounded-md dark:bg-white dark:text-black dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300"
                             type="email">
                     </div>
 
@@ -174,13 +174,13 @@
                                 Password?</a>
                         </div>
 
-                        <input id="loggingPassword"
+                        <input id="loggingPassword" tabindex="2"
                             class="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-white dark:text-black dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300"
                             type="password">
                     </div>
 
                     <div class="mt-8">
-                        <button id="login-btn"
+                        <button id="login-btn" tabindex="2"
                             class="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-gray-700 rounded hover:bg-gray-900 hover:font-bold focus:outline-none focus:bg-gray-600">
                             Login
                         </button>
@@ -197,10 +197,10 @@
                         <span class="w-1/5 border-b dark:border-black md:w-1/4"></span>
                     </div>
                     <!-- Popup Error -->
-                    <div id="popup-error" class="hidden absolute top-0  right-0 left-0">
+                    <div id="popup-error" class=" hidden absolute top-0  right-0 left-0">
 
                         <div
-                            class="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+                            class="flex w-3/5 max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
                             <div class="flex items-center justify-center w-12 bg-red-500">
                                 <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -212,7 +212,7 @@
                             <div class="px-4 py-2 -mx-3">
                                 <div class="mx-3">
                                     <span class="font-semibold text-red-500 dark:text-red-400">Error</span>
-                                    <p class="text-sm text-gray-600 dark:text-gray-200">Invalid email or password!</p>
+                                    <p class="text-xl text-gray-600 dark:text-gray-200">Invalid email or password!</p>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +220,7 @@
                     <!-- Aleart Success -->
                     <div id="popup-success" class="hidden absolute top-0 left-0 right-0">
                         <div
-                            class="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+                            class="flex w-1/5 max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
                             <div class="flex items-center justify-center w-12 bg-emerald-500">
                                 <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40"
                                     xmlns="http://www.w3.org/2000/svg">
